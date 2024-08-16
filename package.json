@@ -1,0 +1,22 @@
+{
+  "name": "kimoshinowo.github.io",
+  "version": "1.0.0",
+  "description": "Personal website for Kim Oshinowo",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kimoshinowo/kimoshinowo.github.io.git"
+  },
+  "author": "Kimberley Oshinowo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kimoshinowo/kimoshinowo.github.io/issues"
+  },
+  "homepage": "https://github.com/kimoshinowo/kimoshinowo.github.io/",
+  "dependencies": {
+    "sass": "^1.77.8"
+  }
+}
