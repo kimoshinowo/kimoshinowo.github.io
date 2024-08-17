@@ -233,7 +233,8 @@ p {
   }
 }
 .grid__item {
-  border-bottom: 2px dashed #d57c66;
+  background-color: #cfe2cf;
+  border-radius: 20px;
   padding: 20px;
   text-align: center;
 }

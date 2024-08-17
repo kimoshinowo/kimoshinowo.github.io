@@ -8,7 +8,8 @@
     }
 
     &__item {
-        border-bottom: 2px dashed $alt-colour;
+        background-color: $main-colour--tint;
+        border-radius: 20px;
         padding: 20px;
         text-align: center;
     }
