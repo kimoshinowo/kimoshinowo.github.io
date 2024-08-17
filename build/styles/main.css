@@ -242,6 +242,7 @@ p {
 }
 .pagescreen__highlight-box {
   background-color: #b0d1b1;
+  margin-bottom: 50px;
   padding: 30px;
 }
 @media only screen and (min-width: 600px) {
