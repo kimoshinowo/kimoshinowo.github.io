@@ -75,7 +75,7 @@ h1 {
 }
 @media only screen and (min-width: 769px) {
   h1 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 }
 
@@ -85,7 +85,7 @@ h2 {
 }
 @media only screen and (min-width: 769px) {
   h2 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 }
 
@@ -95,7 +95,7 @@ h3 {
 }
 @media only screen and (min-width: 769px) {
   h3 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -110,10 +110,10 @@ p {
   border-radius: 20px;
   color: white;
   cursor: pointer;
-  display: inline-block;
+  display: block;
   font-size: 1.2rem;
   font-weight: bold;
-  margin: 4px;
+  margin: 4px auto;
   padding: 20px 50px;
 }
 .button:hover, .button:focus {
@@ -198,10 +198,14 @@ p {
   border-radius: 20px;
   display: block;
   height: 2rem;
+  margin-bottom: 20px;
 }
 .form__item input, .form__item textarea {
   margin-top: 10px;
   width: 100%;
+}
+.form__item input {
+  height: 2rem;
 }
 
 .image {
