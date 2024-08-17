@@ -199,6 +199,9 @@ p {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
+.grid__item {
+  margin: auto;
+}
 
 .homescreen {
   display: flex;
