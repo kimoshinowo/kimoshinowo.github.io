@@ -206,6 +206,10 @@ p {
   width: 70%;
 }
 
+.image {
+  display: block;
+}
+
 .grid {
   display: grid;
   grid-template-columns: 1fr;
