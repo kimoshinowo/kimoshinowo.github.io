@@ -8,14 +8,15 @@
 
         & input,
         & textarea {
+            border: none;
+            border-radius: 20px;
             margin-top: 10px;
+            padding: 0 20px;
             width: 100%;
         }
 
         & input {
-            border: none;
-            border-radius: 20px;
-            height: 2rem;
+            height: 2.5rem;
         }
     }
 }
