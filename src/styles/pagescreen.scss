@@ -1,6 +1,7 @@
 .pagescreen {
     display: block;
     height: calc(100vh - 60px);
+    margin: auto;
     max-width: 1800px;
     padding: 90px 30px;
     width: 100%;
@@ -11,6 +12,18 @@
 
     @media only screen and (min-width: 1024px) {
         padding: 140px 200px;
+    }
+
+    &:last-child {
+        padding-top: 30px;
+    
+        @media only screen and (min-width: 600px) {
+            padding: 50px;
+        }
+    
+        @media only screen and (min-width: 1024px) {
+            padding: 80px;
+        }
     }
 
     &__content {

@@ -90,13 +90,14 @@ p {
   border: none;
   border-radius: 20px;
   color: white;
+  cursor: pointer;
+  display: inline-block;
   font-size: 1.2rem;
   font-weight: bold;
   padding: 20px 50px;
 }
 .button:hover, .button:focus {
   background-color: #679768;
-  cursor: pointer;
 }
 .button:active {
   background-color: #477a48;
@@ -112,6 +113,7 @@ p {
   align-items: center;
   display: flex;
   height: 100%;
+  margin: auto;
   max-width: 1800px;
   padding: 0 30px;
   width: 100%;
@@ -139,9 +141,17 @@ p {
   font-weight: bold;
   padding: 10px 40px;
 }
+.nav__item-link:hover, .nav__item-link:focus {
+  background-color: #b0d1b1;
+}
+.nav__item-link:active {
+  background-color: #80b081;
+  color: white;
+}
 .nav--stick {
   position: fixed;
   top: 0;
+  width: 100%;
 }
 
 .homescreen {
@@ -157,6 +167,7 @@ p {
 .pagescreen {
   display: block;
   height: calc(100vh - 60px);
+  margin: auto;
   max-width: 1800px;
   padding: 90px 30px;
   width: 100%;
@@ -169,6 +180,19 @@ p {
 @media only screen and (min-width: 1024px) {
   .pagescreen {
     padding: 140px 200px;
+  }
+}
+.pagescreen:last-child {
+  padding-top: 30px;
+}
+@media only screen and (min-width: 600px) {
+  .pagescreen:last-child {
+    padding: 50px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .pagescreen:last-child {
+    padding: 80px;
   }
 }
 .pagescreen__content {
