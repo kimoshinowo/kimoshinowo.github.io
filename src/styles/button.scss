@@ -20,4 +20,18 @@
     &:active {
         background-color: $main-colour--extra-dark;
     }
+
+    &--alt {
+        background-color: $alt-colour;
+
+        &:hover,
+        &:focus {
+            background-color: $alt-colour--dark;
+            border: 4px solid $alt-colour--extra-dark;
+        }
+    
+        &:active {
+            background-color: $alt-colour--extra-dark;
+        }
+    }
 }
