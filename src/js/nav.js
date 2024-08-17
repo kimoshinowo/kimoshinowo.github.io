@@ -26,5 +26,5 @@ function smoothScrollWithOffset(target) {
         var pos = contactSectionPos;
     }
 
-    window.scrollTo(pos + 60);
+    window.scrollTo((pos + 60));
 }
