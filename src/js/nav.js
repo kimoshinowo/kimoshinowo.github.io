@@ -26,5 +26,7 @@ function smoothScrollWithOffset(target) {
         var pos = contactSectionPos;
     }
 
-    window.scrollTo((pos + 60));
+    var currentNavOffset = navbar.offsetTop;
+
+    window.scrollTo((pos + 60 - currentNavOffset));
 }
