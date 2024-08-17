@@ -194,16 +194,16 @@ p {
   max-width: 700px;
 }
 .form__item {
-  border: none;
-  border-radius: 20px;
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 .form__item input, .form__item textarea {
   margin-top: 10px;
   width: 100%;
 }
 .form__item input {
+  border: none;
+  border-radius: 20px;
   height: 2rem;
 }
 

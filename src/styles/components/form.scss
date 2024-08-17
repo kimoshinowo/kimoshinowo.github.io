@@ -3,10 +3,8 @@
     max-width: 700px;
 
     &__item {
-        border: none;
-        border-radius: 20px;
         display: block;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
 
         & input,
         & textarea {
@@ -15,6 +13,8 @@
         }
 
         & input {
+            border: none;
+            border-radius: 20px;
             height: 2rem;
         }
     }
