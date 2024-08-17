@@ -169,7 +169,7 @@ p {
   height: calc(100vh - 60px);
   margin: auto;
   max-width: 1800px;
-  padding: 30px 30px;
+  padding: 30px;
   width: 100%;
 }
 @media only screen and (min-width: 600px) {
@@ -182,9 +182,26 @@ p {
     padding: 80px 200px;
   }
 }
+.pagescreen:last-child {
+  margin-top: -60px;
+}
 .pagescreen__content {
   margin: auto;
   text-align: center;
+}
+.pagescreen__highlight-box {
+  background-color: #cfe2cf;
+  padding: 30px;
+}
+@media only screen and (min-width: 600px) {
+  .pagescreen__highlight-box {
+    padding: 50px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .pagescreen__highlight-box {
+    padding: 80px;
+  }
 }
 
 html {
