@@ -139,7 +139,7 @@ p {
   cursor: pointer;
   font-size: 1.2rem;
   font-weight: bold;
-  padding: 10px 40px;
+  padding: 20px 40px;
 }
 .nav__item-link:hover, .nav__item-link:focus {
   background-color: #b0d1b1;
@@ -169,30 +169,17 @@ p {
   height: calc(100vh - 60px);
   margin: auto;
   max-width: 1800px;
-  padding: 90px 30px;
+  padding: 30px 30px;
   width: 100%;
 }
 @media only screen and (min-width: 600px) {
   .pagescreen {
-    padding: 110px 100px;
+    padding: 50px 100px;
   }
 }
 @media only screen and (min-width: 1024px) {
   .pagescreen {
-    padding: 140px 200px;
-  }
-}
-.pagescreen:last-child {
-  padding-top: 30px;
-}
-@media only screen and (min-width: 600px) {
-  .pagescreen:last-child {
-    padding: 50px;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  .pagescreen:last-child {
-    padding: 80px;
+    padding: 80px 200px;
   }
 }
 .pagescreen__content {
