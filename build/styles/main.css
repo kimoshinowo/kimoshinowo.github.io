@@ -127,10 +127,10 @@ p {
   }
 }
 .nav__item {
-  border-right: 2px solid #477a48;
+  border-right: 1px solid #477a48;
 }
 .nav__item:first-of-type {
-  border-left: 2px solid #477a48;
+  border-left: 1px solid #477a48;
 }
 .nav__item-link {
   color: #477a48;
@@ -158,17 +158,17 @@ p {
   display: block;
   height: calc(100vh - 60px);
   max-width: 1800px;
-  padding: 30px 90px;
+  padding: 90px 30px;
   width: 100%;
 }
 @media only screen and (min-width: 600px) {
   .pagescreen {
-    padding: 50px 160px;
+    padding: 110px 100px;
   }
 }
 @media only screen and (min-width: 1024px) {
   .pagescreen {
-    padding: 80px 260px;
+    padding: 140px 200px;
   }
 }
 .pagescreen__content {
