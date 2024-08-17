@@ -137,6 +137,7 @@ p {
 
 .nav {
   background-color: #cfe2cf;
+  box-shadow: 0px 0px 5px #969696;
   height: 60px;
   overflow: hidden;
   width: 100%;
