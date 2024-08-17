@@ -54,7 +54,6 @@ table {
 
 * {
   box-sizing: border-box;
-  color: #262626;
 }
 
 * {
@@ -74,6 +73,25 @@ h2 {
 
 h3 {
   font-size: 2rem;
+}
+
+p {
+  color: #262626;
+}
+
+.button {
+  background-color: #80b081;
+  color: #262626;
+  font-weight: bold;
+  padding: 15px 30px;
+}
+.button:hover, .button:focus {
+  background-color: #679768;
+}
+
+.homescreen {
+  height: 100vh;
+  width: 100vw;
 }
 
 /*# sourceMappingURL=main.css.map */
