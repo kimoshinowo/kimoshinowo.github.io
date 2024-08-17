@@ -199,11 +199,9 @@ p {
   display: block;
   height: 2rem;
 }
-.form__item label {
-  width: 30%;
-}
 .form__item input {
-  width: 70%;
+  margin-top: 10px;
+  width: 100%;
 }
 
 .image {
@@ -222,7 +220,6 @@ p {
 }
 .grid__item {
   border-bottom: 2px dashed #d57c66;
-  border-radius: 20px;
   padding: 20px;
 }
 

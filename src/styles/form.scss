@@ -8,12 +8,9 @@
         display: block;
         height: 2rem;
 
-        & label {
-            width: 30%;
-        }
-
         & input {
-            width: 70%;
+            margin-top: 10px;
+            width: 100%;
         }
     }
 }
