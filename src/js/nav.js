@@ -1,9 +1,8 @@
 // When the user scrolls the page, execute myFunction
-window.onscroll = function() {
-    var navbar = document.getElementById("nav");
-    var sticky = navbar.offsetTop;
-    console.log(sticky);
+var navbar = document.getElementById("nav");
+const sticky = navbar.offsetTop;
 
+window.onscroll = function() {
     if (window.scrollY >= sticky) {
         navbar.classList.add("nav--stick")
     } else {
