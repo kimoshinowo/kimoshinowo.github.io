@@ -1,0 +1,11 @@
+.button {
+    background-color: $main-colour;
+    color: $text-color;
+    font-weight: bold;
+    padding: 15px 30px;
+
+    &:hover,
+    &:focus {
+        background-color: $main-colour--dark;
+    }
+}
