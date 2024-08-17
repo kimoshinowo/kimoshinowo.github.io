@@ -199,13 +199,14 @@ p {
   display: block;
   height: 2rem;
 }
-.form__item input {
+.form__item input, .form__item textarea {
   margin-top: 10px;
   width: 100%;
 }
 
 .image {
   display: block;
+  width: 100%;
 }
 
 .grid {
