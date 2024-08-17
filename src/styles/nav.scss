@@ -1,6 +1,7 @@
 .nav {
     background-color: $main-colour--tint;
     height: 60px;
+    overflow: hidden;
 
     &__list {
         align-items: center;
