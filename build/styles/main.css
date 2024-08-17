@@ -18,8 +18,8 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
-  font: inherit;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
   vertical-align: baseline;
 }
 
@@ -54,13 +54,15 @@ table {
 
 * {
   box-sizing: border-box;
+  text-decoration: none;
 }
 
-h1, h2, h3, h4, p {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 18px;
+* {
   line-height: 120%;
-  text-decoration: none;
+}
+
+h1, h2, h3 {
+  font-weight: bold;
 }
 
 h1 {
@@ -70,12 +72,12 @@ h1 {
 
 h2 {
   font-size: 3rem;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.5rem;
 }
 
 h3 {
   font-size: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
 }
 
 p {
@@ -88,25 +90,34 @@ p {
   border: none;
   border-radius: 10px;
   color: white;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: bold;
   padding: 15px 30px;
 }
 .button:hover, .button:focus {
   background-color: #679768;
+  cursor: pointer;
 }
 .button:active {
   background-color: #477a48;
 }
 
 .nav {
-  background-color: #b0d1b1;
+  background-color: #cfe2cf;
+  height: 60px;
 }
 .nav__list {
+  align-items: center;
   display: flex;
+  height: 100%;
+  margin: auto;
+  max-width: 1800px;
 }
 .nav__item {
-  padding: 20px;
+  padding: 10px 40px;
+}
+.nav__item:not(:last-of-type) {
+  border-right: 1px solid #477a48;
 }
 
 .homescreen {
@@ -115,6 +126,28 @@ p {
   width: 100%;
 }
 .homescreen__content {
+  margin: auto;
+  text-align: center;
+}
+
+.pagescreen {
+  display: flex;
+  height: 100vh;
+  max-width: 1800px;
+  padding: 0 30px;
+  width: 100%;
+}
+@media only screen and (min-width: 600px) {
+  .pagescreen {
+    padding: 0 100px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .pagescreen {
+    padding: 0 200px;
+  }
+}
+.pagescreen__content {
   margin: auto;
   text-align: center;
 }
