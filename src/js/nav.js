@@ -2,6 +2,7 @@
 window.onscroll = function() {
     var navbar = document.getElementById("nav");
     var sticky = navbar.offsetTop;
+    console.log(sticky);
 
     if (window.scrollY >= sticky) {
         navbar.classList.add("nav--stick")
