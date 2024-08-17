@@ -197,7 +197,6 @@ p {
   border: none;
   border-radius: 20px;
   display: block;
-  height: 2rem;
   margin-bottom: 20px;
 }
 .form__item input, .form__item textarea {
@@ -211,6 +210,12 @@ p {
 .image {
   display: block;
   width: 100%;
+}
+.image--grey {
+  filter: grayscale(50%);
+}
+.image--grey:hover, .image--grey:focus {
+  filter: grayscale(0);
 }
 
 .grid {

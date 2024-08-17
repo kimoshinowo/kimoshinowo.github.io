@@ -1,4 +1,13 @@
 .image {
     display: block;
     width: 100%;
+
+    &--grey {
+        filter: grayscale(50%);
+
+        &:hover,
+        &:focus {
+            filter: grayscale(0);
+        }
+    }
 }
