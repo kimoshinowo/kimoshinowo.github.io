@@ -109,6 +109,16 @@ p {
 .button:active {
   background-color: #477a48;
 }
+.button--alt {
+  background-color: #d57c66;
+}
+.button--alt:hover, .button--alt:focus {
+  background-color: #be6751;
+  border: 4px solid #9d4d39;
+}
+.button--alt:active {
+  background-color: #9d4d39;
+}
 
 .nav {
   background-color: #cfe2cf;
@@ -197,7 +207,7 @@ p {
   text-align: center;
 }
 .pagescreen__highlight-box {
-  background-color: #cfe2cf;
+  background-color: #b0d1b1;
   padding: 30px;
 }
 @media only screen and (min-width: 600px) {
