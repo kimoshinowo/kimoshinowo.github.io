@@ -120,6 +120,8 @@ p {
   background-color: #679768;
   border: 4px solid #477a48;
   margin: 0 auto;
+  padding-bottom: 16px;
+  padding-top: 16px;
 }
 .button:active {
   background-color: #477a48;
