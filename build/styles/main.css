@@ -222,6 +222,7 @@ p {
 .grid__item {
   border-bottom: 2px dashed #d57c66;
   padding: 20px;
+  text-align: center;
 }
 
 .homescreen {

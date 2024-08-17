@@ -1,19 +1,18 @@
-@import 'reset';
-
 // Base styles
-@import 'colour';
-@import 'typography';
+@import 'base/reset';
+@import 'base/colour';
+@import 'base/typography';
 
 // Components
-@import 'button';
-@import 'nav';
-@import 'form';
-@import 'image';
+@import 'components/button';
+@import 'components/nav';
+@import 'components/form';
+@import 'components/image';
 
 // Layout styles
-@import 'grid';
-@import 'homescreen';
-@import 'pagescreen';
+@import 'layout/grid';
+@import 'layout/homescreen';
+@import 'layout/pagescreen';
 
 html {
     scroll-behavior: smooth;
