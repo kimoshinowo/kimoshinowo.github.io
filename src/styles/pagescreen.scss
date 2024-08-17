@@ -1,6 +1,6 @@
 .pagescreen {
     display: flex;
-    height: 100vh;
+    height: calc(100vh - 60px);
     max-width: 1800px;
     padding: 0 30px;
     width: 100%;
