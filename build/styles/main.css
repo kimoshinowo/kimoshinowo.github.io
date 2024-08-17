@@ -105,6 +105,8 @@ p {
 .nav {
   background-color: #cfe2cf;
   height: 60px;
+  overflow: hidden;
+  width: 100%;
 }
 .nav__list {
   align-items: center;
@@ -125,13 +127,13 @@ p {
   }
 }
 .nav__item {
-  border-right: 1px solid #477a48;
-  padding: 10px 0;
+  border-right: 2px solid #477a48;
 }
 .nav__item:first-of-type {
-  border-left: 1px solid #477a48;
+  border-left: 2px solid #477a48;
 }
 .nav__item-link {
+  color: #477a48;
   cursor: pointer;
   font-size: 1.2rem;
   font-weight: bold;
