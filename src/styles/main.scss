@@ -1,2 +1,11 @@
 @import 'reset';
+
+// Base styles
+@import 'colour';
 @import 'typography';
+
+// Components
+@import 'button';
+
+// Page specific styles
+@import 'homescreen';
