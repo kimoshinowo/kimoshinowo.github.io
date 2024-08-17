@@ -11,3 +11,7 @@
 // Page specific styles
 @import 'homescreen';
 @import 'pagescreen';
+
+html {
+    scroll-behavior: smooth;
+}

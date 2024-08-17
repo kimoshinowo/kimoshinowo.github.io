@@ -6,15 +6,25 @@
         align-items: center;
         display: flex;
         height: 100%;
-        margin: auto;
         max-width: 1800px;
+        padding: 0 30px;
+        width: 100%;
+    
+        @media only screen and (min-width: 600px) {
+            padding: 0 100px;
+        }
+    
+        @media only screen and (min-width: 1024px) {
+            padding: 0 200px;
+        }
     }
 
     &__item {
+        border-right: 1px solid $main-colour--extra-dark;
         padding: 10px 0;
-        
-        &:not(:last-of-type) {
-            border-right: 1px solid $main-colour--extra-dark;
+
+        &:first-of-type {
+            border-left: 1px solid $main-colour--extra-dark;
         }
     }
 
