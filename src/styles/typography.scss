@@ -1,4 +1,11 @@
+@font-face {
+    font-family: mainFont;
+    src: url(../../assets/fonts/OutrequeRegular.ttf);
+}
+  
 * {
+    font-size: 18px;
+	font-family: mainFont;
     line-height: 120%;
 }
 
