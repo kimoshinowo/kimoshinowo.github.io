@@ -119,7 +119,7 @@ p {
 .button:hover, .button:focus {
   background-color: #679768;
   border: 4px solid #477a48;
-  margin: 0;
+  margin: 0 auto;
 }
 .button:active {
   background-color: #477a48;
