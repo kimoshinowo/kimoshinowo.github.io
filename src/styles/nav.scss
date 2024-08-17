@@ -24,4 +24,9 @@
         font-weight: bold;
         padding: 10px 40px;
     }
+
+    &--stick {
+        position: fixed;
+        top: 0;
+    }
 }
