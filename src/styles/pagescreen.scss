@@ -3,7 +3,7 @@
     height: calc(100vh - 60px);
     margin: auto;
     max-width: 1800px;
-    padding: 30px 30px;
+    padding: 30px;
     width: 100%;
 
     @media only screen and (min-width: 600px) {
@@ -14,8 +14,25 @@
         padding: 80px 200px;
     }
 
+    &:last-child {
+        margin-top: -60px;
+    }
+
     &__content {
         margin: auto;
         text-align: center;
+    }
+
+    &__highlight-box {
+        background-color: $main-colour--tint;
+        padding: 30px;
+
+        @media only screen and (min-width: 600px) {
+            padding: 50px;
+        }
+    
+        @media only screen and (min-width: 1024px) {
+            padding: 80px;
+        }
     }
 }
