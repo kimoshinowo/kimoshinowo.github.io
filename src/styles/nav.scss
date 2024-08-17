@@ -22,10 +22,10 @@
     }
 
     &__item {
-        border-right: 2px solid $main-colour--extra-dark;
+        border-right: 1px solid $main-colour--extra-dark;
 
         &:first-of-type {
-            border-left: 2px solid $main-colour--extra-dark;
+            border-left: 1px solid $main-colour--extra-dark;
         }
     }
 
