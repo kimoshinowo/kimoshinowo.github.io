@@ -233,13 +233,15 @@ p {
   }
 }
 .grid__item {
-  background-color: #0e5549;
-  border-radius: 20px;
   padding: 20px;
   text-align: center;
 }
 .grid__item:hover {
   cursor: pointer;
+}
+.grid__item--highlight {
+  background-color: #0e5549;
+  border-radius: 20px;
 }
 
 .homescreen {
@@ -278,7 +280,7 @@ p {
   text-align: center;
 }
 .pagescreen__highlight-box {
-  background-color: #0e5549;
+  background-color: #1d7365;
   margin-bottom: 50px;
   padding: 30px;
 }
