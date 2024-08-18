@@ -222,6 +222,9 @@ p {
 .image--grey:hover, .image--grey:focus {
   filter: grayscale(0);
 }
+.image--round {
+  border-radius: 50%;
+}
 
 .grid {
   display: grid;
@@ -275,6 +278,9 @@ p {
 }
 .pagescreen:last-child {
   margin-top: -60px;
+}
+.pagescreen--flex {
+  display: flex;
 }
 .pagescreen__content {
   margin: auto;
