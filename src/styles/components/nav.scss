@@ -41,12 +41,12 @@
 
         &:hover,
         &:focus {
-            background-color: $dark-main-colour--light;
+            background-color: $dark-main-colour;
         }
 
         &:active {
             background-color: $dark-main-colour;
-            color: $dark-text-colour--light;
+            color: $dark-text-colour;
         }
     }
 
