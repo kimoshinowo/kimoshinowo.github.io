@@ -14,4 +14,35 @@
     &--round {
         border-radius: 50%;
     }
+
+    &__icons {
+        display: block;
+        position: relative;
+
+        &--small,
+        &--med,
+        &--large {
+            position: absolute;
+        }
+
+        &--small {
+            height: 100px;
+            left: 65%;
+            top: 45%;
+            width: 100px;
+        }
+
+        &--med {
+            height: 200px;
+            left: 50%;
+            width: 200px;
+        }
+
+        &--large {
+            height: 300px;
+            left: 20%;
+            top: 30%;
+            width: 300px;
+        }
+    }
 }
