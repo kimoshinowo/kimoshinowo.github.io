@@ -227,6 +227,7 @@ p {
 }
 .image__icons {
   display: block;
+  height: 400px;
   position: relative;
 }
 .image__icons--small, .image__icons--med, .image__icons--large {
