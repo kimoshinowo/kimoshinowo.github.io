@@ -233,10 +233,13 @@ p {
   }
 }
 .grid__item {
-  background-color: #cfe2cf;
+  background-color: #e7f8e7;
   border-radius: 20px;
   padding: 20px;
   text-align: center;
+}
+.grid__item:hover {
+  cursor: pointer;
 }
 
 .homescreen {
