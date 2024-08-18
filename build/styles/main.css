@@ -225,6 +225,33 @@ p {
 .image--round {
   border-radius: 50%;
 }
+.image__icons {
+  display: block;
+  position: relative;
+}
+.image__icons--small, .image__icons--med, .image__icons--large {
+  position: absolute;
+}
+.image__icons--small:hover, .image__icons--med:hover, .image__icons--large:hover {
+  transform: scale(1.1);
+}
+.image__icons--small {
+  height: 200px;
+  left: 55%;
+  top: 55%;
+  width: 200px;
+}
+.image__icons--med {
+  height: 250px;
+  left: 45%;
+  width: 250px;
+}
+.image__icons--large {
+  height: 300px;
+  left: 18%;
+  top: 40%;
+  width: 300px;
+}
 
 .grid {
   display: grid;

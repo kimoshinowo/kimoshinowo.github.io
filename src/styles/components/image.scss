@@ -23,25 +23,29 @@
         &--med,
         &--large {
             position: absolute;
+
+            &:hover {
+                transform: scale(1.1);
+            }
         }
 
         &--small {
-            height: 100px;
-            left: 65%;
-            top: 45%;
-            width: 100px;
+            height: 200px;
+            left: 55%;
+            top: 55%;
+            width: 200px;
         }
 
         &--med {
-            height: 200px;
-            left: 50%;
-            width: 200px;
+            height: 250px;
+            left: 45%;
+            width: 250px;
         }
 
         &--large {
             height: 300px;
-            left: 20%;
-            top: 30%;
+            left: 18%;
+            top: 40%;
             width: 300px;
         }
     }
