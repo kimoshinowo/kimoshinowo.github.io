@@ -236,20 +236,26 @@ p {
   transform: scale(1.1);
 }
 .image__icons--small {
-  height: 200px;
   left: 55%;
   top: 55%;
+}
+.image__icons--small.image__icons-asset {
+  height: 200px;
   width: 200px;
 }
 .image__icons--med {
-  height: 250px;
   left: 45%;
+}
+.image__icons--med.image__icons-asset {
+  height: 250px;
   width: 250px;
 }
 .image__icons--large {
-  height: 300px;
   left: 18%;
   top: 40%;
+}
+.image__icons--large.image__icons-asset {
+  height: 300px;
   width: 300px;
 }
 

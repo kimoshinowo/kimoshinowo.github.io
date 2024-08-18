@@ -30,23 +30,32 @@
         }
 
         &--small {
-            height: 200px;
             left: 55%;
             top: 55%;
-            width: 200px;
+
+            &.image__icons-asset {
+                height: 200px;
+                width: 200px;
+            }
         }
 
         &--med {
-            height: 250px;
             left: 45%;
-            width: 250px;
+
+            &.image__icons-asset {
+                height: 250px;
+                width: 250px;
+            }
         }
 
         &--large {
-            height: 300px;
             left: 18%;
             top: 40%;
-            width: 300px;
+
+            &.image__icons-asset {
+                height: 300px;
+                width: 300px;
+            }
         }
     }
 }
