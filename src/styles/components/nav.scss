@@ -1,6 +1,6 @@
 .nav {
     background-color: $dark-main-colour--dark;
-    box-shadow: 0px 5px 5px -5px #969696;
+    box-shadow: 0px 5px 5px -5px #0d0d0d;
     height: 60px;
     overflow: hidden;
     width: 100%;
@@ -25,15 +25,15 @@
     }
 
     &__item {
-        border-right: 1px solid $dark-main-colour--extra-dark;
+        border-right: 1px solid $dark-main-colour--tint;
 
         &:first-of-type {
-            border-left: 1px solid $dark-main-colour--extra-dark;
+            border-left: 1px solid $dark-main-colour--tint
         }
     }
 
     &__item-link {
-        color: $dark-main-colour--extra-dark;
+        color: $dark-main-colour--tint;
         cursor: pointer;
         font-size: 1.2rem;
         font-weight: bold;
@@ -46,7 +46,7 @@
 
         &:active {
             background-color: $dark-main-colour;
-            color: $dark-text-colour;
+            color: $dark-text-colour--dark;
         }
     }
 
