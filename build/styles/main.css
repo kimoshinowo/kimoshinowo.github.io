@@ -275,12 +275,6 @@ p {
   position: relative;
   width: 260px;
 }
-@media only screen and (min-width: 769px) {
-  .image__icons {
-    height: 550px;
-    width: 550px;
-  }
-}
 .image__icons--small, .image__icons--med, .image__icons--large {
   position: absolute;
 }
@@ -292,58 +286,24 @@ p {
   right: 0;
   top: 130px;
 }
-@media only screen and (min-width: 769px) {
-  .image__icons--small {
-    left: 350px;
-    top: 280px;
-  }
-}
 .image__icons--small .image__icons-asset {
   height: 90px;
   width: 90px;
 }
-@media only screen and (min-width: 769px) {
-  .image__icons--small .image__icons-asset {
-    height: 200px;
-    width: 200px;
-  }
-}
 .image__icons--med {
   right: 20px;
-}
-@media only screen and (min-width: 769px) {
-  .image__icons--med {
-    left: 250px;
-  }
 }
 .image__icons--med .image__icons-asset {
   height: 110px;
   width: 110px;
 }
-@media only screen and (min-width: 769px) {
-  .image__icons--med .image__icons-asset {
-    height: 250px;
-    width: 250px;
-  }
-}
 .image__icons--large {
   left: 0;
   top: 80px;
 }
-@media only screen and (min-width: 769px) {
-  .image__icons--large {
-    top: 200px;
-  }
-}
 .image__icons--large .image__icons-asset {
   height: 140px;
   width: 140px;
-}
-@media only screen and (min-width: 769px) {
-  .image__icons--large .image__icons-asset {
-    height: 300px;
-    width: 300px;
-  }
 }
 
 .grid {
