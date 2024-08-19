@@ -15,6 +15,10 @@
         border-radius: 50%;
     }
 
+    &--square {
+        aspect-ratio: 1/1;
+    }
+
     &--one-third-width {
         align-self: center;
         max-width: 100%;
