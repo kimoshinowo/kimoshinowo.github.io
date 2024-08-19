@@ -389,6 +389,7 @@ p {
 }
 .pagescreen__highlight-box {
   background-color: #1d7365;
+  border-radius: 10px;
   margin-bottom: 50px;
   padding: 30px;
 }
