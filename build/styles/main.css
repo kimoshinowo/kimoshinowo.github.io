@@ -183,7 +183,7 @@ p {
   font-weight: bold;
   padding: 0;
 }
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 600px) {
   .nav__item-link {
     padding: 20px 40px;
   }
