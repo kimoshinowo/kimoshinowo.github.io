@@ -15,6 +15,14 @@
         border-radius: 50%;
     }
 
+    &--one-third-width {
+        max-width: 100%;
+        
+        @media only screen and (min-width: 769px) {
+            max-width: 33%;
+        }
+    }
+
     &__icons {
         display: block;
         height: 400px;

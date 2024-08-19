@@ -225,6 +225,14 @@ p {
 .image--round {
   border-radius: 50%;
 }
+.image--one-third-width {
+  max-width: 100%;
+}
+@media only screen and (min-width: 769px) {
+  .image--one-third-width {
+    max-width: 33%;
+  }
+}
 .image__icons {
   display: block;
   height: 400px;
