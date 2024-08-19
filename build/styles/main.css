@@ -256,6 +256,9 @@ p {
 .image--round {
   border-radius: 50%;
 }
+.image--square {
+  aspect-ratio: 1/1;
+}
 .image--one-third-width {
   align-self: center;
   max-width: 100%;
@@ -397,6 +400,7 @@ p {
   margin-top: -60px;
 }
 .pagescreen--flex {
+  align-items: center;
   display: flex;
   flex-direction: column;
 }
