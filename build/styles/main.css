@@ -348,6 +348,11 @@ p {
 }
 @media only screen and (min-width: 600px) {
   .pagescreen {
+    padding: 50px 60px;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .pagescreen {
     padding: 50px 100px;
   }
 }
