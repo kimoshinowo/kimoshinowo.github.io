@@ -403,10 +403,16 @@ p {
   align-items: center;
   display: flex;
   flex-direction: column;
+  gap: 50px;
 }
 @media only screen and (min-width: 769px) {
   .pagescreen--flex {
     flex-direction: row;
+  }
+}
+@media only screen and (min-width: 1201px) {
+  .pagescreen--flex {
+    gap: 100px;
   }
 }
 .pagescreen__content {
