@@ -1,6 +1,7 @@
 .nav {
     background-color: $dark-main-colour--dark;
     box-shadow: 0px 5px 5px -5px #0d0d0d;
+    display: none;
     height: 60px;
     overflow: hidden;
     width: 100%;
@@ -80,6 +81,7 @@
     }
 
     &--stick {
+        display: block;
         position: fixed;
         top: 0;
         width: 100%;

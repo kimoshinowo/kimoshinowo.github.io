@@ -140,6 +140,7 @@ p {
 .nav {
   background-color: #0e5549;
   box-shadow: 0px 5px 5px -5px #0d0d0d;
+  display: none;
   height: 60px;
   overflow: hidden;
   width: 100%;
@@ -214,6 +215,7 @@ p {
   }
 }
 .nav--stick {
+  display: block;
   position: fixed;
   top: 0;
   width: 100%;
@@ -247,7 +249,7 @@ p {
   width: 100%;
 }
 .image--grey {
-  filter: grayscale(50%);
+  filter: grayscale(100%);
 }
 .image--grey:hover, .image--grey:focus {
   filter: grayscale(0);
