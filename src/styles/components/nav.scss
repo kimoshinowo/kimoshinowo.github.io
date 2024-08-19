@@ -30,6 +30,12 @@
         &:first-of-type {
             border-left: 1px solid $dark-main-colour--tint
         }
+
+        @media only screen and (max-width: 600px) {
+            border: none;
+            margin: 33%;
+            text-align: center;
+        }
     }
 
     &__item-link {
@@ -57,8 +63,10 @@
 
     &__icon {
         display: block;
-        height: 20px;
-        width: 20px;
+        height: 35px;
+        margin: auto;
+        padding-top: 10px;
+        width: 35px;
 
         @media only screen and (min-width: 600px) {
             display: none;
@@ -67,7 +75,8 @@
 
     &__text {
         @media only screen and (max-width: 600px) {
-            font-size: 10px;
+            font-size: 12px;
+            font-weight: lighter;
         }
     }
 

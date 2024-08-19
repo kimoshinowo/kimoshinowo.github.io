@@ -169,6 +169,13 @@ p {
 .nav__item:first-of-type {
   border-left: 1px solid #cafff6;
 }
+@media only screen and (max-width: 600px) {
+  .nav__item {
+    border: none;
+    margin: 33%;
+    text-align: center;
+  }
+}
 .nav__item-link {
   color: #cafff6;
   cursor: pointer;
@@ -190,8 +197,10 @@ p {
 }
 .nav__icon {
   display: block;
-  height: 20px;
-  width: 20px;
+  height: 35px;
+  margin: auto;
+  padding-top: 10px;
+  width: 35px;
 }
 @media only screen and (min-width: 600px) {
   .nav__icon {
@@ -200,7 +209,8 @@ p {
 }
 @media only screen and (max-width: 600px) {
   .nav__text {
-    font-size: 10px;
+    font-size: 12px;
+    font-weight: lighter;
   }
 }
 .nav--stick {
