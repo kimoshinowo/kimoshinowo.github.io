@@ -151,7 +151,6 @@ p {
   height: 100%;
   margin: auto;
   max-width: 1600px;
-  padding: 0 30px;
   width: 100%;
 }
 @media only screen and (min-width: 600px) {
@@ -172,8 +171,8 @@ p {
 }
 @media only screen and (max-width: 600px) {
   .nav__item {
-    border: none;
-    margin: 33%;
+    border: none !important;
+    width: 33%;
     text-align: center;
   }
 }
@@ -182,11 +181,11 @@ p {
   cursor: pointer;
   font-size: 1.2rem;
   font-weight: bold;
-  padding: 20px 40px;
+  padding: 0;
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 769px) {
   .nav__item-link {
-    display: flex;
+    padding: 20px 40px;
   }
 }
 .nav__item-link:hover, .nav__item-link:focus {
