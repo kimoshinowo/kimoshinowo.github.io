@@ -236,7 +236,7 @@ p {
 }
 .image__icons {
   display: block;
-  height: 400px;
+  height: 550px;
   margin: auto;
   position: relative;
   width: 260px;
@@ -250,6 +250,7 @@ p {
   position: absolute;
 }
 .image__icons--small:hover, .image__icons--med:hover, .image__icons--large:hover {
+  cursor: pointer;
   transform: scale(1.1);
 }
 .image__icons--small {
@@ -282,7 +283,7 @@ p {
 }
 .image__icons--med .image__icons-asset {
   height: 110px;
-  width: 11px;
+  width: 110px;
 }
 @media only screen and (min-width: 769px) {
   .image__icons--med .image__icons-asset {
