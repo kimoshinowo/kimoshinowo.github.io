@@ -127,6 +127,7 @@ p {
 }
 .button--alt {
   background-color: #9d4d39;
+  box-shadow: 0px 2px 5px #282828;
 }
 .button--alt:hover, .button--alt:focus {
   background-color: #be6751;

@@ -24,6 +24,7 @@
 
     &--alt {
         background-color: $alt-colour--extra-dark;
+        box-shadow: 0px 2px 5px $dark-bg-colour;
 
         &:hover,
         &:focus {
