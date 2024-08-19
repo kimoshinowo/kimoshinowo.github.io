@@ -35,9 +35,14 @@
     &__item-link {
         color: $dark-main-colour--tint;
         cursor: pointer;
+        
         font-size: 1.2rem;
         font-weight: bold;
         padding: 20px 40px;
+
+        @media only screen and (min-width: 600px) {
+            display: flex;
+        }
 
         &:hover,
         &:focus {
@@ -47,6 +52,22 @@
         &:active {
             background-color: $dark-main-colour;
             color: $dark-text-colour--dark;
+        }
+    }
+
+    &__icon {
+        display: block;
+        height: 20px;
+        width: 20px;
+
+        @media only screen and (min-width: 600px) {
+            display: none;
+        }
+    }
+
+    &__text {
+        @media only screen and (max-width: 600px) {
+            font-size: 10px;
         }
     }
 

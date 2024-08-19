@@ -149,7 +149,7 @@ p {
   display: flex;
   height: 100%;
   margin: auto;
-  max-width: 1800px;
+  max-width: 1600px;
   padding: 0 30px;
   width: 100%;
 }
@@ -176,12 +176,32 @@ p {
   font-weight: bold;
   padding: 20px 40px;
 }
+@media only screen and (min-width: 600px) {
+  .nav__item-link {
+    display: flex;
+  }
+}
 .nav__item-link:hover, .nav__item-link:focus {
   background-color: #1d7365;
 }
 .nav__item-link:active {
   background-color: #1d7365;
   color: #262626;
+}
+.nav__icon {
+  display: block;
+  height: 20px;
+  width: 20px;
+}
+@media only screen and (min-width: 600px) {
+  .nav__icon {
+    display: none;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .nav__text {
+    font-size: 10px;
+  }
 }
 .nav--stick {
   position: fixed;
@@ -348,7 +368,7 @@ p {
   display: block;
   min-height: calc(100vh - 60px);
   margin: auto;
-  max-width: 1800px;
+  max-width: 1600px;
   padding: 30px;
   width: 100%;
 }
