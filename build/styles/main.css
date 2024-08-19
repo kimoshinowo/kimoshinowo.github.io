@@ -240,14 +240,14 @@ p {
   left: 55%;
   top: 55%;
 }
-.image__icons--small.image__icons-asset {
+.image__icons--small .image__icons-asset {
   height: 200px;
   width: 200px;
 }
 .image__icons--med {
   left: 45%;
 }
-.image__icons--med.image__icons-asset {
+.image__icons--med .image__icons-asset {
   height: 250px;
   width: 250px;
 }
@@ -255,7 +255,7 @@ p {
   left: 18%;
   top: 40%;
 }
-.image__icons--large.image__icons-asset {
+.image__icons--large .image__icons-asset {
   height: 300px;
   width: 300px;
 }
