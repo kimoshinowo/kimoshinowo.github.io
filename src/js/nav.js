@@ -27,7 +27,7 @@ function smoothScrollWithOffset(target) {
     }
 
     var currentNavOffset = navbar.offsetTop;
-    var scrollPos = (pos) - currentNavOffset;
+    var scrollPos = pos - 60;
 
     window.scrollTo({top: scrollPos, behavior: "smooth"});
 }
