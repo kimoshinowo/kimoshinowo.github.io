@@ -14,8 +14,8 @@ var aboutSection = document.getElementById("about");
 var projectsSection = document.getElementById("projects");
 var contactSection = document.getElementById("contact");
 var aboutSectionPos = aboutSection.offsetTop;
-var projectsSectionPos = aboutSection.offsetTop;
-var contactSectionPos = aboutSection.offsetTop;
+var projectsSectionPos = projectsSection.offsetTop;
+var contactSectionPos = contactSection.offsetTop;
 
 function smoothScrollWithOffset(target) {
     if (target == 'about') {
@@ -26,7 +26,6 @@ function smoothScrollWithOffset(target) {
         var pos = contactSectionPos;
     }
 
-    var currentNavOffset = navbar.offsetTop;
     var scrollPos = pos - 60;
 
     window.scrollTo({top: scrollPos, behavior: "smooth"});
