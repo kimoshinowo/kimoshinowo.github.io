@@ -351,17 +351,17 @@ p {
 }
 @media only screen and (min-width: 600px) {
   .pagescreen {
-    padding: 100px 60px 0;
+    padding: 60px 60px 0;
   }
 }
 @media only screen and (min-width: 769px) {
   .pagescreen {
-    padding: 100px 100px 0;
+    padding: 80px 100px 0;
   }
 }
 @media only screen and (min-width: 1024px) {
   .pagescreen {
-    padding: 160px 200px 0;
+    padding: 100px 200px 0;
   }
 }
 .pagescreen--flex {
@@ -399,10 +399,6 @@ p {
   .pagescreen__highlight-box {
     padding: 80px;
   }
-}
-
-body {
-  position: relative;
 }
 
 html {
