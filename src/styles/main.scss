@@ -18,3 +18,15 @@ html {
     background-color: $dark-bg-colour;
     scroll-behavior: smooth;
 }
+
+.hide--mobile-tablet {
+    @media only screen and (max-width: 1200px) {
+        display: none;
+    }
+}
+
+.hide--desktop {
+    @media only screen and (min-width: 1201px) {
+        display: none;
+    }
+}

@@ -24,12 +24,9 @@
         align-self: center;
         max-width: 400px;
 
-        @media only screen and (min-width: 769px) {
-            max-width: calc(50% - 50px);
-        }
-
         @media only screen and (min-width: 1201px) {
             max-width: calc(33% - 100px);
+            order: 1;
         }
     }
 
@@ -84,12 +81,8 @@
     &__tech-logos {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: space-between;
         max-height: 100px;
-
-        @media only screen and (min-width: 769px) {
-            justify-content: space-between;
-        }
     }
     
     &__tech-logo {
