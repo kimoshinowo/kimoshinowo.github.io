@@ -14,10 +14,6 @@
 @import 'layout/homescreen';
 @import 'layout/pagescreen';
 
-body {
-    position: relative;
-}
-
 html {
     background-color: $dark-bg-colour;
     scroll-behavior: smooth;
