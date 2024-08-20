@@ -76,4 +76,15 @@
             }
         }
     }
+
+    &__tech-logos {
+        display: flex;
+        max-height: 100px;
+    }
+    
+    &__tech-logo {
+        height: auto;
+        max-height: 100px;
+        width: auto;
+    }
 }
