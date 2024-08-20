@@ -263,11 +263,11 @@ p {
 }
 .image--one-third-width {
   align-self: center;
-  max-width: 400px;
+  max-width: 370px;
 }
-@media only screen and (min-width: 1201px) {
+@media only screen and (min-width: 1024px) {
   .image--one-third-width {
-    max-width: calc(33% - 100px);
+    max-width: calc(40% - 100px);
     order: 1;
   }
 }
@@ -311,11 +311,17 @@ p {
 .image__tech-logos {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  max-height: 100px;
+  justify-content: center;
+  width: 100%;
+}
+@media only screen and (min-width: 1024px) {
+  .image__tech-logos {
+    justify-content: space-between;
+  }
 }
 .image__tech-logo {
   height: auto;
+  margin: auto;
   max-height: 100px;
   width: auto;
 }
@@ -366,14 +372,14 @@ p {
     padding: 60px 60px 30px;
   }
 }
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 1024px) {
   .pagescreen {
     padding: 80px 100px 40px;
   }
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1201px) {
   .pagescreen {
-    padding: 100px 200px 50px;
+    padding: 100px 150px 50px;
   }
 }
 .pagescreen--flex {
@@ -382,14 +388,9 @@ p {
   flex-direction: column;
   gap: 50px;
 }
-@media only screen and (min-width: 1201px) {
+@media only screen and (min-width: 1024px) {
   .pagescreen--flex {
     flex-direction: row;
-  }
-}
-@media only screen and (min-width: 1201px) {
-  .pagescreen--flex {
-    gap: 100px;
   }
 }
 .pagescreen__content {
@@ -418,13 +419,13 @@ html {
   scroll-behavior: smooth;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1023px) {
   .hide--mobile-tablet {
     display: none;
   }
 }
 
-@media only screen and (min-width: 1201px) {
+@media only screen and (min-width: 1024px) {
   .hide--desktop {
     display: none;
   }
