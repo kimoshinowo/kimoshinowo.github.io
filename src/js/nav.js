@@ -11,7 +11,6 @@ window.onscroll = function() {
 };
 
 
-
 function smoothScrollWithOffset(target) {
     var aboutSection = document.getElementById("about");
     var projectsSection = document.getElementById("projects");
@@ -19,8 +18,7 @@ function smoothScrollWithOffset(target) {
     var aboutSectionPos = aboutSection.offsetTop;
     var projectsSectionPos = projectsSection.offsetTop;
     var contactSectionPos = contactSection.offsetTop;
-    var mainPos = document.getElementById("main").offsetTop;
-    
+
     if (target == 'about') {
         var pos = aboutSectionPos;
     } else if (target == 'projects') {
@@ -29,10 +27,7 @@ function smoothScrollWithOffset(target) {
         var pos = contactSectionPos;
     }
 
-    var scrollPos = (mainPos + pos) - 60;
-
-    console.log(pos);
-    console.log(mainPos);
+    var scrollPos = pos - 60;
 
     window.scrollTo({top: scrollPos, behavior: "smooth"});
 }
