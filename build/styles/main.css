@@ -254,8 +254,8 @@ p {
 .image--grey:hover, .image--grey:focus {
   filter: grayscale(0);
 }
-.image--round {
-  border-radius: 50%;
+.image--rounded {
+  border-radius: 30px;
 }
 .image--square {
   aspect-ratio: 1/1;
@@ -356,22 +356,22 @@ p {
   min-height: calc(100vh - 60px);
   margin: auto;
   max-width: 1600px;
-  padding: 50px 30px 0;
+  padding: 50px 30px 25px;
   width: 100%;
 }
 @media only screen and (min-width: 600px) {
   .pagescreen {
-    padding: 60px 60px 0;
+    padding: 60px 60px 30px;
   }
 }
 @media only screen and (min-width: 769px) {
   .pagescreen {
-    padding: 80px 100px 0;
+    padding: 80px 100px 40px;
   }
 }
 @media only screen and (min-width: 1024px) {
   .pagescreen {
-    padding: 100px 200px 0;
+    padding: 100px 200px 50px;
   }
 }
 .pagescreen--flex {
