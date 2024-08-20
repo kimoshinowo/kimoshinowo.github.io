@@ -16,6 +16,7 @@ var contactSection = document.getElementById("contact");
 var aboutSectionPos = aboutSection.offsetTop;
 var projectsSectionPos = projectsSection.offsetTop;
 var contactSectionPos = contactSection.offsetTop;
+var mainPos = document.getElementById("main").offsetTop;
 
 function smoothScrollWithOffset(target) {
     if (target == 'about') {
@@ -26,7 +27,10 @@ function smoothScrollWithOffset(target) {
         var pos = contactSectionPos;
     }
 
-    var scrollPos = pos - 60;
+    var scrollPos = (mainPos + pos) - 60;
+
+    console.log(pos);
+    console.log(mainPos);
 
     window.scrollTo({top: scrollPos, behavior: "smooth"});
 }

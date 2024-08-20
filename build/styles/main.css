@@ -401,6 +401,10 @@ p {
   }
 }
 
+body {
+  position: relative;
+}
+
 html {
   background-color: #282828;
   scroll-behavior: smooth;
