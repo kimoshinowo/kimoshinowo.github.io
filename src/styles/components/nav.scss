@@ -31,10 +31,16 @@
             border-left: 1px solid $dark-main-colour--tint
         }
 
-        @media only screen and (max-width: 600px) {
+        @media only screen and (max-width: 599px) {
             border: none !important;
             width: 33%;
             text-align: center;
+        }
+
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: $dark-main-colour;
         }
     }
 
@@ -59,6 +65,11 @@
             background-color: $dark-main-colour;
             color: $dark-text-colour--dark;
         }
+
+        &:active {
+            background-color: $dark-main-colour;
+            color: $dark-text-colour--dark;
+        }
     }
 
     &__icon {
@@ -74,7 +85,7 @@
     }
 
     &__text {
-        @media only screen and (max-width: 600px) {
+        @media only screen and (max-width: 599px) {
             font-size: 12px;
             font-weight: lighter;
         }

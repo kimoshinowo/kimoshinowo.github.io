@@ -170,12 +170,15 @@ p {
 .nav__item:first-of-type {
   border-left: 1px solid #cafff6;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 599px) {
   .nav__item {
     border: none !important;
     width: 33%;
     text-align: center;
   }
+}
+.nav__item:hover, .nav__item:focus, .nav__item:active {
+  background-color: #1d7365;
 }
 .nav__item-link {
   color: #cafff6;
@@ -196,6 +199,10 @@ p {
   background-color: #1d7365;
   color: #262626;
 }
+.nav__item-link:active {
+  background-color: #1d7365;
+  color: #262626;
+}
 .nav__icon {
   display: block;
   height: 35px;
@@ -208,7 +215,7 @@ p {
     display: none;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 599px) {
   .nav__text {
     font-size: 12px;
     font-weight: lighter;
