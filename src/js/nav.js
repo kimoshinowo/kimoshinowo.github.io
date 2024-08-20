@@ -10,15 +10,17 @@ window.onscroll = function() {
     }
 };
 
-var aboutSection = document.getElementById("about");
-var projectsSection = document.getElementById("projects");
-var contactSection = document.getElementById("contact");
-var aboutSectionPos = aboutSection.offsetTop;
-var projectsSectionPos = projectsSection.offsetTop;
-var contactSectionPos = contactSection.offsetTop;
-var mainPos = document.getElementById("main").offsetTop;
+
 
 function smoothScrollWithOffset(target) {
+    var aboutSection = document.getElementById("about");
+    var projectsSection = document.getElementById("projects");
+    var contactSection = document.getElementById("contact");
+    var aboutSectionPos = aboutSection.offsetTop;
+    var projectsSectionPos = projectsSection.offsetTop;
+    var contactSectionPos = contactSection.offsetTop;
+    var mainPos = document.getElementById("main").offsetTop;
+    
     if (target == 'about') {
         var pos = aboutSectionPos;
     } else if (target == 'projects') {
