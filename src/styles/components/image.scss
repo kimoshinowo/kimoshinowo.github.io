@@ -25,7 +25,11 @@
         max-width: 400px;
 
         @media only screen and (min-width: 769px) {
-            max-width: 33%;
+            max-width: calc(50% - 50px);
+        }
+
+        @media only screen and (min-width: 1201px) {
+            max-width: calc(33% - 100px);
         }
     }
 
@@ -79,8 +83,13 @@
 
     &__tech-logos {
         display: flex;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        justify-content: space-around;
         max-height: 100px;
+
+        @media only screen and (min-width: 769px) {
+            justify-content: space-between;
+        }
     }
     
     &__tech-logo {

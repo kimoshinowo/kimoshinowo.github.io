@@ -267,7 +267,12 @@ p {
 }
 @media only screen and (min-width: 769px) {
   .image--one-third-width {
-    max-width: 33%;
+    max-width: calc(50% - 50px);
+  }
+}
+@media only screen and (min-width: 1201px) {
+  .image--one-third-width {
+    max-width: calc(33% - 100px);
   }
 }
 .image__icons {
@@ -309,8 +314,14 @@ p {
 }
 .image__tech-logos {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-around;
   max-height: 100px;
+}
+@media only screen and (min-width: 769px) {
+  .image__tech-logos {
+    justify-content: space-between;
+  }
 }
 .image__tech-logo {
   height: auto;
