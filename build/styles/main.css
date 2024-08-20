@@ -274,8 +274,8 @@ p {
   display: block;
   height: 300px;
   margin: auto;
+  min-width: 260px;
   position: relative;
-  width: 260px;
 }
 .image__icons--small, .image__icons--med, .image__icons--large {
   position: absolute;
@@ -346,26 +346,23 @@ p {
   min-height: calc(100vh - 60px);
   margin: auto;
   max-width: 1600px;
-  padding: 30px;
+  padding: 50px 30px 0;
   width: 100%;
 }
 @media only screen and (min-width: 600px) {
   .pagescreen {
-    padding: 50px 60px;
+    padding: 100px 60px 0;
   }
 }
 @media only screen and (min-width: 769px) {
   .pagescreen {
-    padding: 50px 100px;
+    padding: 100px 100px 0;
   }
 }
 @media only screen and (min-width: 1024px) {
   .pagescreen {
-    padding: 80px 200px;
+    padding: 160px 200px 0;
   }
-}
-.pagescreen:last-child {
-  margin-top: -60px;
 }
 .pagescreen--flex {
   align-items: center;
