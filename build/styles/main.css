@@ -243,8 +243,9 @@ p:not(:last-of-type) {
   background-color: #f8f8f8;
   border: none;
   border-radius: 10px;
+  color: #262626;
   margin-top: 10px;
-  padding: 0 20px;
+  padding: 10px 20px;
   width: 100%;
 }
 .form__item input {
@@ -329,7 +330,7 @@ p:not(:last-of-type) {
 .image__tech-logo {
   height: auto;
   margin: 20px auto 0;
-  max-height: 100px;
+  max-height: 70px;
   padding: 0 20px;
   width: auto;
 }
@@ -427,13 +428,13 @@ html {
   scroll-behavior: smooth;
 }
 
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 1200px) {
   .hide--mobile-tablet {
     display: none;
   }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1201px) {
   .hide--desktop {
     display: none;
   }

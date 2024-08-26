@@ -20,13 +20,13 @@ html {
 }
 
 .hide--mobile-tablet {
-    @media only screen and (max-width: 1023px) {
+    @media only screen and (max-width: 1200px) {
         display: none;
     }
 }
 
 .hide--desktop {
-    @media only screen and (min-width: 1024px) {
+    @media only screen and (min-width: 1201px) {
         display: none;
     }
 }
