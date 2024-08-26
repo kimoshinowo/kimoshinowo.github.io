@@ -22,9 +22,12 @@
 
     &--one-third-width {
         align-self: center;
+        height: auto;
         max-width: 370px;
+        width: auto;
 
         @media only screen and (min-width: 1024px) {
+            max-height: 420px;
             max-width: calc(40% - 100px);
             order: 1;
         }

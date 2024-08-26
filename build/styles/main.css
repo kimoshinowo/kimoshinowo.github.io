@@ -271,10 +271,13 @@ p:not(:last-of-type) {
 }
 .image--one-third-width {
   align-self: center;
+  height: auto;
   max-width: 370px;
+  width: auto;
 }
 @media only screen and (min-width: 1024px) {
   .image--one-third-width {
+    max-height: 420px;
     max-width: calc(40% - 100px);
     order: 1;
   }
