@@ -1,7 +1,20 @@
-#shape {
+.shape {
     background: $dark-main-colour--lightest;    
     height: 200px;
     opacity: 0.5;
     position: absolute;
     width: 200px;
+
+    &--circle {
+        background: $dark-main-colour;
+        border-radius: 50%;
+    }
+
+    &--triangle {
+        border-bottom: 100px solid $dark-main-colour--light;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        height: 0;
+        width: 0;
+    }
 }
