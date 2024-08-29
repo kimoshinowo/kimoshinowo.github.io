@@ -1,8 +1,6 @@
 // When the user scrolls the page, execute myFunction
 var navbar = document.getElementById("nav");
-var sticky = navbar.previousElementSibling.offsetHeight;
-
-console.log(sticky);
+var sticky = navbar.previousElementSibling.offsetHeight - 60;
 
 window.onscroll = function() {
     if (window.scrollY >= sticky) {
@@ -11,7 +9,6 @@ window.onscroll = function() {
         navbar.classList.remove("nav--stick");
     }
 };
-
 
 function smoothScrollWithOffset(target) {
     var aboutSection = document.getElementById("about");
