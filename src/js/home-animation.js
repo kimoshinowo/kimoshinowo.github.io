@@ -19,8 +19,8 @@ function frame() {
         // xPos = 0;
         clearInterval(id);
     } else {
-        yPos =+ yDir;
-        xPos =+ xDir;
+        yPos += yDir;
+        xPos += xDir;
 
         elem.style.top = yPos + 'px';
         elem.style.left = xPos + 'px';
