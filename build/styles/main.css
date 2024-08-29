@@ -364,6 +364,7 @@ p:not(:last-of-type) {
   background-color: #151515;
   display: flex;
   height: 100vh;
+  position: relative;
   width: 100%;
 }
 .homescreen__content {
