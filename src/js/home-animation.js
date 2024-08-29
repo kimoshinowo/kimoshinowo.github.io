@@ -42,7 +42,7 @@ id1 = setInterval(frame(shape1), 10);
 
 function frame(shape) {
     if (((shape.yPos + 200) >= screenHeight) || (shape.yPos <= 0)) {
-        yDir = yDir * (-1);
+        shape.yDir = shape.yDir * (-1);
     } else if (((shape.xPos + 200) >= screenWidth) || (shape.xPos <= 0)) {
         shape.xDir = shape.xDir * (-1);
     }
@@ -52,6 +52,8 @@ function frame(shape) {
 
     shape.elem.style.top = shape.yPos + 'px';
     shape.elem.style.left = shape.xPos + 'px';
+
+    console.log(shape.yPos);
 }
 
 function getRndInteger(min, max) {
