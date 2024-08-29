@@ -350,6 +350,7 @@ p:not(:last-of-type) {
   border-radius: 50%;
 }
 .shape--triangle {
+  background: transparent;
   border-bottom: 200px solid #3a9f8e;
   border-left: 87px solid transparent;
   border-right: 87px solid transparent;

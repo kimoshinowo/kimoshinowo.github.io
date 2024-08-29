@@ -11,6 +11,7 @@
     }
 
     &--triangle {
+        background: transparent;
         border-bottom: 200px solid $dark-main-colour--light;
         border-left: 87px solid transparent;
         border-right: 87px solid transparent;
