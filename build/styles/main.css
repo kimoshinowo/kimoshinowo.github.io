@@ -339,11 +339,11 @@ p:not(:last-of-type) {
 }
 
 #shape {
-  width: 200px;
+  background: #8bd6c9;
   height: 200px;
   opacity: 0.5;
   position: absolute;
-  background: #8bd6c9;
+  width: 200px;
 }
 
 .grid {
@@ -379,6 +379,7 @@ p:not(:last-of-type) {
 .homescreen__content {
   margin: auto;
   text-align: center;
+  z-index: 2;
 }
 
 .pagescreen {
