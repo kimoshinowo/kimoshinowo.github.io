@@ -14,9 +14,9 @@ clearInterval(id);
 id = setInterval(frame, 10);
 
 function frame() {
-    if (((yPos - 200) >= screenHeight) || (yPos <= 0)) {
+    if (((yPos + 200) >= screenHeight) || (yPos <= 0)) {
         yDir = yDir * (-1);
-    } else if (((xPos - 200) >= screenWidth) || (xPos <= 0)) {
+    } else if (((xPos + 200) >= screenWidth) || (xPos <= 0)) {
         xDir = xDir * (-1);
     }
 
