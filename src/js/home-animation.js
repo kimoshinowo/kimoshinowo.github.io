@@ -38,9 +38,9 @@ id2 = setInterval(frame, 10, shape2);
 id3 = setInterval(frame, 10, shape3);
 
 function frame(shape) {
-    if (((shape.yPos + 200) >= screenHeight) || (shape.yPos <= 0)) {
+    if (((shape.yPos + 200) > screenHeight) || (shape.yPos < 0)) {
         shape.yDir = shape.yDir * (-1);
-    } else if (((shape.xPos + 200) >= screenWidth) || (shape.xPos <= 0)) {
+    } else if (((shape.xPos + 200) > screenWidth) || (shape.xPos < 0)) {
         shape.xDir = shape.xDir * (-1);
     }
 
