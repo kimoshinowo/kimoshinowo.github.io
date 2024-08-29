@@ -36,7 +36,7 @@ let shape1 = {
     xDir: Math.round(Math.random()) * 2 - 1
 }
 
-id1 = setInterval(frame(shape1), 10);
+id1 = setInterval(frame, 10, shape1);
 // id2 = setInterval(frame(elem2, yPos2, xPos2, yDir2, xDir2), 10);
 // id3 = setInterval(frame(elem3, yPos3, xPos3, yDir3, xDir3), 10);
 
