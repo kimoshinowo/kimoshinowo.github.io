@@ -25,13 +25,12 @@ yDir3 = Math.round(Math.random()) * 2 - 1;
 xDir3 = Math.round(Math.random()) * 2 - 1;
 
 clearInterval(id1);
-clearInterval(id2);
-clearInterval(id3);
+// clearInterval(id2);
+// clearInterval(id3);
 
 id1 = setInterval(frame(elem1, yPos1, xPos1, yDir1, xDir1), 10);
-id2 = setInterval(frame(elem2, yPos2, xPos2, yDir2, xDir2), 10);
-id3 = setInterval(frame(elem3, yPos3, xPos3, yDir3, xDir3), 10);
-
+// id2 = setInterval(frame(elem2, yPos2, xPos2, yDir2, xDir2), 10);
+// id3 = setInterval(frame(elem3, yPos3, xPos3, yDir3, xDir3), 10);
 
 function frame(elem, yPos, xPos, yDir, xDir) {
     if (((yPos + 200) >= screenHeight) || (yPos <= 0)) {
