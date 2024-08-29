@@ -143,8 +143,6 @@ p:not(:last-of-type) {
   display: none;
   height: 60px;
   overflow: hidden;
-  position: fixed;
-  top: 100vh;
   width: 100%;
   z-index: 10;
 }
