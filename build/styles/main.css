@@ -338,37 +338,50 @@ p:not(:last-of-type) {
   width: auto;
 }
 
-.shape {
-  background: #8bd6c9;
-  height: 150px;
+.circle {
+  background: #1d7365;
+  border-radius: 50%;
   opacity: 0.5;
   position: absolute;
+}
+.circle--lg {
+  height: 150px;
   width: 150px;
 }
 @media only screen and (min-width: 1024px) {
-  .shape {
+  .circle--lg {
     height: 350px;
     width: 350px;
   }
 }
-.shape--circle {
-  background: #64c5b4;
-  border-radius: 50%;
-}
-.shape--triangle {
-  background: transparent;
-  border-bottom: 150px solid #3a9f8e;
-  border-left: 65px solid transparent;
-  border-right: 65px solid transparent;
-  height: 0;
-  width: 0;
+.circle--med {
+  height: 75px;
+  width: 75px;
 }
 @media only screen and (min-width: 1024px) {
-  .shape--triangle {
-    border-bottom: 350px solid #3a9f8e;
-    border-left: 152px solid transparent;
-    border-right: 152px solid transparent;
+  .circle--med {
+    height: 175px;
+    width: 175px;
   }
+}
+.circle--sml {
+  height: 37px;
+  width: 37px;
+}
+@media only screen and (min-width: 1024px) {
+  .circle--sml {
+    height: 87px;
+    width: 87px;
+  }
+}
+.circle--light {
+  background: #3a9f8e;
+}
+.circle--lighter {
+  background: #64c5b4;
+}
+.circle--lightest {
+  background: #8bd6c9;
 }
 
 .grid {

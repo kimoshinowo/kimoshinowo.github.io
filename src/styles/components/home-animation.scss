@@ -1,32 +1,48 @@
-.shape {
-    background: $dark-main-colour--lightest;    
-    height: 150px;
+.circle {
+    background: $dark-main-colour;    
+    border-radius: 50%; 
     opacity: 0.5;
     position: absolute;
-    width: 150px;
 
-    @media only screen and (min-width: 1024px) {
-        height: 350px;
-        width: 350px;
-    }
-
-    &--circle {
-        background: $dark-main-colour--lighter;
-        border-radius: 50%;
-    }
-
-    &--triangle {
-        background: transparent;
-        border-bottom: 150px solid $dark-main-colour--light;
-        border-left: 65px solid transparent;
-        border-right: 65px solid transparent;
-        height: 0;
-        width: 0;
+    &--lg {
+        height: 150px;      
+        width: 150px;
 
         @media only screen and (min-width: 1024px) {
-            border-bottom: 350px solid $dark-main-colour--light;
-            border-left: 152px solid transparent;
-            border-right: 152px solid transparent;
+            height: 350px;
+            width: 350px;
         }
+    }
+
+    &--med {
+        height: 75px;      
+        width: 75px;
+
+        @media only screen and (min-width: 1024px) {
+            height: 175px;
+            width: 175px;
+        }
+    }
+
+    &--sml {
+        height: 37px;      
+        width: 37px;
+
+        @media only screen and (min-width: 1024px) {
+            height: 87px;
+            width: 87px;
+        }
+    }
+
+    &--light {
+        background: $dark-main-colour--light;
+    }
+
+    &--lighter {
+        background: $dark-main-colour--lighter;
+    }
+
+    &--lightest {
+        background: $dark-main-colour--lightest;
     }
 }
