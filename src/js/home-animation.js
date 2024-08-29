@@ -28,29 +28,30 @@ clearInterval(id1);
 // clearInterval(id2);
 // clearInterval(id3);
 
-id1 = setInterval(frame(elem1, yPos1, xPos1, yDir1, xDir1, 1), 10);
+let shape1 = {
+    elem: document.getElementById("shape1"),
+    yPos: getRndInteger(1, screenHeight),
+    xPos: getRndInteger(1, screenWidth),
+    yDir: Math.round(Math.random()) * 2 - 1,
+    xDir: Math.round(Math.random()) * 2 - 1
+}
+
+id1 = setInterval(frame(shape1), 10);
 // id2 = setInterval(frame(elem2, yPos2, xPos2, yDir2, xDir2), 10);
 // id3 = setInterval(frame(elem3, yPos3, xPos3, yDir3, xDir3), 10);
 
-function frame(elem, yPos, xPos, yDir, xDir, num) {
-    if (((yPos + 200) >= screenHeight) || (yPos <= 0)) {
+function frame(shape) {
+    if (((shape.yPos + 200) >= screenHeight) || (shape.yPos <= 0)) {
         yDir = yDir * (-1);
-    } else if (((xPos + 200) >= screenWidth) || (xPos <= 0)) {
-        xDir = xDir * (-1);
+    } else if (((shape.xPos + 200) >= screenWidth) || (shape.xPos <= 0)) {
+        shape.xDir = shape.xDir * (-1);
     }
 
-    yPos += yDir;
-    xPos += xDir;
+    shape.yPos += shape.yDir;
+    shape.xPos += shape.xDir;
 
-    elem.style.top = yPos + 'px';
-    elem.style.left = xPos + 'px';
-
-    if (num == 1) {
-        yDir1 = yDir;
-        xDir1 = xDir;
-        yPos1 = yPos;
-        xPos1 = xPos;
-    }
+    shape.elem.style.top = shape.yPos + 'px';
+    shape.elem.style.left = shape.xPos + 'px';
 }
 
 function getRndInteger(min, max) {
