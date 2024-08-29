@@ -407,7 +407,7 @@ p:not(:last-of-type) {
 }
 
 .homescreen {
-  background-color: #151515;
+  background-color: #080808;
   display: flex;
   height: 100vh;
   overflow: hidden;
