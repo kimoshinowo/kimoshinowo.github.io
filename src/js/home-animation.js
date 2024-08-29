@@ -43,8 +43,8 @@ function frame(num) {
         yPos1 += yDir1;
         xPos1 += xDir1;
 
-        elem.style.top = yPos1 + 'px';
-        elem.style.left = xPos1 + 'px';
+        elem1.style.top = yPos1 + 'px';
+        elem1.style.left = xPos1 + 'px';
     }
 
     
