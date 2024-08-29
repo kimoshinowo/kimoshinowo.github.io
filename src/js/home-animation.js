@@ -7,8 +7,8 @@ var screenWidth = document.getElementById("homescreen").offsetWidth;
 var yPos = getRndInteger(1, screenHeight);
 var xPos = getRndInteger(1, screenWidth);
 
-yDir = getRndInteger(0, 2) - 1;
-xDir = getRndInteger(0, 2) - 1;
+yDir = Math.round(Math.random()) * 2 - 1;
+xDir = Math.round(Math.random()) * 2 - 1;
 
 clearInterval(id);
 id = setInterval(frame, 10);
