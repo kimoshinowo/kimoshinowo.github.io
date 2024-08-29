@@ -1,6 +1,6 @@
 // When the user scrolls the page, execute myFunction
 var navbar = document.getElementById("nav");
-var sticky = navbar.previousSibling.offsetHeight;
+var sticky = navbar.previousElementSibling.offsetHeight;
 
 console.log(sticky);
 
