@@ -351,8 +351,8 @@ p:not(:last-of-type) {
 }
 .shape--triangle {
   border-bottom: 200px solid #3a9f8e;
-  border-left: 100px solid transparent;
-  border-right: 100px solid transparent;
+  border-left: 87px solid transparent;
+  border-right: 87px solid transparent;
   height: 0;
   width: 0;
 }
