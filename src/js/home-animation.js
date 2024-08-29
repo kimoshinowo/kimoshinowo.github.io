@@ -28,26 +28,29 @@ clearInterval(id1);
 // clearInterval(id2);
 // clearInterval(id3);
 
-id1 = setInterval(frame(1), 10);
+id1 = setInterval(frame(elem1, yPos1, xPos1, yDir1, xDir1, 1), 10);
 // id2 = setInterval(frame(elem2, yPos2, xPos2, yDir2, xDir2), 10);
 // id3 = setInterval(frame(elem3, yPos3, xPos3, yDir3, xDir3), 10);
 
-function frame(num) {
-    if (num == 1) {
-        if (((yPos1 + 200) >= screenHeight) || (yPos1 <= 0)) {
-            yDir1 = yDir1 * (-1);
-        } else if (((xPos1 + 200) >= screenWidth) || (xPos1 <= 0)) {
-            xDir1 = xDir1 * (-1);
-        }
-
-        yPos1 += yDir1;
-        xPos1 += xDir1;
-
-        elem1.style.top = yPos1 + 'px';
-        elem1.style.left = xPos1 + 'px';
+function frame(elem, yPos, xPos, yDir, xDir, num) {
+    if (((yPos + 200) >= screenHeight) || (yPos <= 0)) {
+        yDir = yDir * (-1);
+    } else if (((xPos + 200) >= screenWidth) || (xPos <= 0)) {
+        xDir = xDir * (-1);
     }
 
-    
+    yPos += yDir;
+    xPos += xDir;
+
+    elem.style.top = yPos + 'px';
+    elem.style.left = xPos + 'px';
+
+    if (num == 1) {
+        yDir1 = yDir;
+        xDir1 = xDir;
+        yPos1 = yPos;
+        xPos1 = xPos;
+    }
 }
 
 function getRndInteger(min, max) {
