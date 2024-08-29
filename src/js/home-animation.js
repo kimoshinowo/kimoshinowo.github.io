@@ -1,16 +1,24 @@
 var id = null;
 
 var elem = document.getElementById("shape");
-var pos = 0;
+var screenHeight = document.getElementById("homescreen").offsetHeight;
+var screenWidth = document.getElementById("homescreen").offsetWidth;
+
+var yPos = 0;
+var xPos = 0;
+
 clearInterval(id);
 id = setInterval(frame, 10);
 
 function frame() {
-    if (pos == 350) {
+    if ((yPos == screenHeight) || (xPos == screenWidth)) {
         clearInterval(id);
+        yPos = 0;
+        xPos = 0;
     } else {
-        pos++;
-        elem.style.top = pos + 'px';
-        elem.style.left = pos + 'px';
+        yPos++;
+        xPos++;
+        elem.style.top = yPos + 'px';
+        elem.style.left = xPos + 'px';
     }
 }
