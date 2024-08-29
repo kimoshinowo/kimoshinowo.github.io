@@ -340,22 +340,35 @@ p:not(:last-of-type) {
 
 .shape {
   background: #8bd6c9;
-  height: 200px;
-  opacity: 0.5;
+  height: 150px;
+  opacity: 0.75;
   position: absolute;
-  width: 200px;
+  width: 150px;
+}
+@media only screen and (min-width: 1024px) {
+  .shape {
+    height: 350px;
+    width: 350px;
+  }
 }
 .shape--circle {
-  background: #1d7365;
+  background: #64c5b4;
   border-radius: 50%;
 }
 .shape--triangle {
   background: transparent;
-  border-bottom: 200px solid #3a9f8e;
-  border-left: 87px solid transparent;
-  border-right: 87px solid transparent;
+  border-bottom: 150px solid #3a9f8e;
+  border-left: 65px solid transparent;
+  border-right: 65px solid transparent;
   height: 0;
   width: 0;
+}
+@media only screen and (min-width: 1024px) {
+  .shape--triangle {
+    border-bottom: 350px solid #3a9f8e;
+    border-left: 152px solid transparent;
+    border-right: 152px solid transparent;
+  }
 }
 
 .grid {

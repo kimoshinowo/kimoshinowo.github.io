@@ -1,21 +1,32 @@
 .shape {
     background: $dark-main-colour--lightest;    
-    height: 200px;
-    opacity: 0.5;
+    height: 150px;
+    opacity: 0.75;
     position: absolute;
-    width: 200px;
+    width: 150px;
+
+    @media only screen and (min-width: 1024px) {
+        height: 350px;
+        width: 350px;
+    }
 
     &--circle {
-        background: $dark-main-colour;
+        background: $dark-main-colour--lighter;
         border-radius: 50%;
     }
 
     &--triangle {
         background: transparent;
-        border-bottom: 200px solid $dark-main-colour--light;
-        border-left: 87px solid transparent;
-        border-right: 87px solid transparent;
+        border-bottom: 150px solid $dark-main-colour--light;
+        border-left: 65px solid transparent;
+        border-right: 65px solid transparent;
         height: 0;
         width: 0;
+
+        @media only screen and (min-width: 1024px) {
+            border-bottom: 350px solid $dark-main-colour--light;
+            border-left: 152px solid transparent;
+            border-right: 152px solid transparent;
+        }
     }
 }
