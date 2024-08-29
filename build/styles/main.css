@@ -341,7 +341,7 @@ p:not(:last-of-type) {
 .shape {
   background: #8bd6c9;
   height: 150px;
-  opacity: 0.75;
+  opacity: 0.5;
   position: absolute;
   width: 150px;
 }
