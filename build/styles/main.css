@@ -372,6 +372,7 @@ p:not(:last-of-type) {
   background-color: #151515;
   display: flex;
   height: 100vh;
+  overflow: hidden;
   position: relative;
   width: 100%;
 }
