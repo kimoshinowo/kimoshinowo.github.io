@@ -11,24 +11,24 @@ clearInterval(id3);
 
 let shape1 = {
     elem: document.getElementById("shape1"),
-    yPos: getRndInteger(1, screenHeight),
-    xPos: getRndInteger(1, screenWidth),
+    yPos: getRndInteger(1, screenHeight - 201),
+    xPos: getRndInteger(1, screenWidth - 201),
     yDir: Math.round(Math.random()) * 2 - 1,
     xDir: Math.round(Math.random()) * 2 - 1
 }
 
 let shape2 = {
     elem: document.getElementById("shape2"),
-    yPos: getRndInteger(1, screenHeight),
-    xPos: getRndInteger(1, screenWidth),
+    yPos: getRndInteger(1, screenHeight - 201),
+    xPos: getRndInteger(1, screenWidth - 201),
     yDir: Math.round(Math.random()) * 2 - 1,
     xDir: Math.round(Math.random()) * 2 - 1
 }
 
 let shape3 = {
     elem: document.getElementById("shape3"),
-    yPos: getRndInteger(1, screenHeight),
-    xPos: getRndInteger(1, screenWidth),
+    yPos: getRndInteger(1, screenHeight - 201),
+    xPos: getRndInteger(1, screenWidth - 201),
     yDir: Math.round(Math.random()) * 2 - 1,
     xDir: Math.round(Math.random()) * 2 - 1
 }
@@ -38,9 +38,9 @@ id2 = setInterval(frame, 10, shape2);
 id3 = setInterval(frame, 10, shape3);
 
 function frame(shape) {
-    if (((shape.yPos + 200) > screenHeight) || (shape.yPos < 0)) {
+    if (((shape.yPos + 200) >= screenHeight) || (shape.yPos <= 0)) {
         shape.yDir = shape.yDir * (-1);
-    } else if (((shape.xPos + 200) > screenWidth) || (shape.xPos < 0)) {
+    } else if (((shape.xPos + 200) >= screenWidth) || (shape.xPos <= 0)) {
         shape.xDir = shape.xDir * (-1);
     }
 
