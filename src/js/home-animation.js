@@ -40,7 +40,7 @@ function frame(num) {
             xDir1 = xDir1 * (-1);
         }
 
-        yPo1s += yDir1;
+        yPos1 += yDir1;
         xPos1 += xDir1;
 
         elem.style.top = yPos1 + 'px';
