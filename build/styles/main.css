@@ -108,6 +108,7 @@ p:not(:last-of-type) {
   background-color: #0e5549;
   border: none;
   border-radius: 10px;
+  box-shadow: 0px 2px 5px #282828;
   color: #f8f8f8;
   cursor: pointer;
   display: block;
@@ -127,7 +128,6 @@ p:not(:last-of-type) {
 }
 .button--alt {
   background-color: #9d4d39;
-  box-shadow: 0px 2px 5px #282828;
 }
 .button--alt:hover, .button--alt:focus {
   background-color: #be6751;

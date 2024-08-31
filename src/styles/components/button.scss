@@ -2,6 +2,7 @@
     background-color: $dark-main-colour--dark;
     border: none;
     border-radius: 10px;
+    box-shadow: 0px 2px 5px $dark-bg-colour;
     color: $dark-text-colour;
     cursor: pointer;
     display: block;
@@ -24,7 +25,6 @@
 
     &--alt {
         background-color: $alt-colour--extra-dark;
-        box-shadow: 0px 2px 5px $dark-bg-colour;
 
         &:hover,
         &:focus {
