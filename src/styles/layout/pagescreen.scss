@@ -29,6 +29,10 @@
         }
     }
 
+    &--centred {
+        justify-content: center;
+    }
+
     &__content {
         margin: auto;
         text-align: center;
