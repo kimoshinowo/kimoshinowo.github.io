@@ -1,157 +1,76 @@
 var screenHeight = document.getElementById("homescreen").offsetHeight;
 var screenWidth = document.getElementById("homescreen").offsetWidth;
 
-var shapeSizeLg = document.getElementById("shape1").offsetHeight;
-var shapeSizeMd = document.getElementById("shape5").offsetHeight;
-var shapeSizeSm = document.getElementById("shape9").offsetHeight;
+var numLarge = 4;
+var numMed = 6;
+var numSmall = 14;
+var numOfShapes = numLarge + numMed + numSmall;
 
-// TODO - reduce all this repetition!
-var id1 = null; 
-var id2 = null;
-var id3 = null;
-var id4 = null; 
-var id5 = null;
-var id6 = null;
-var id7 = null; 
-var id8 = null;
-var id9 = null;
-var id10 = null; 
-var id11 = null;
-var id12 = null;
+for (let i=0; i < numOfShapes; i++) {
+    var shape = document.createElement("div");
+    var j = "shape";
+    shape.setAttribute("id", j.concat(i));
+    shape.classList.add("circle");
 
-clearInterval(id1);
-clearInterval(id2);
-clearInterval(id3);
-clearInterval(id4);
-clearInterval(id5);
-clearInterval(id6);
-clearInterval(id7);
-clearInterval(id8);
-clearInterval(id9);
-clearInterval(id10);
-clearInterval(id11);
-clearInterval(id12);
-
-let shape1 = {
-    elem: document.getElementById("shape1"),
-    yPos: getRndInteger(1, screenHeight - shapeSizeLg - 1),
-    xPos: getRndInteger(1, screenWidth - shapeSizeLg - 1),
-    yDir: Math.round(Math.random()) * 2 - 1,
-    xDir: Math.round(Math.random()) * 2 - 1,
-    size: shapeSizeLg
+    if (i < numLarge) {
+        shape.classList.add("circle--lg");
+    } else if (i < (numMed + numLarge)) {
+        shape.classList.add("circle--med");
+    } else {
+        shape.classList.add("circle--sml");
+    }
+    
+    if ((i + 3) % 4 === 0) {
+        shape.classList.add("circle--light");
+    } else if ((i + 2) % 4 === 0) {
+        shape.classList.add("circle--lighter");
+    } else if ((i + 1) % 4 === 0) {
+        shape.classList.add("circle--lightest");
+    }
+    
+    const parentDiv = document.getElementById("homescreenContent").parentNode;
+    const homescreenContent = document.getElementById("homescreenContent");
+    
+    parentDiv.insertBefore(shape, homescreenContent);
 }
 
-let shape2 = {
-    elem: document.getElementById("shape2"),
-    yPos: getRndInteger(1, screenHeight - shapeSizeLg - 1),
-    xPos: getRndInteger(1, screenWidth - shapeSizeLg - 1),
-    yDir: Math.round(Math.random()) * 2 - 1,
-    xDir: Math.round(Math.random()) * 2 - 1,
-    size: shapeSizeLg
+var j = "shape";
+var shapeSizeLg = document.getElementById(j.concat(numLarge-1)).offsetHeight;
+var shapeSizeMd = document.getElementById(j.concat((numMed + numLarge)-1)).offsetHeight;
+var shapeSizeSm = document.getElementById(j.concat((numMed + numLarge)+1)).offsetHeight;
+
+var ids = [];
+var shapes = [];
+
+for (let i=0; i < numOfShapes; i++) {
+    var j = "shape";
+
+    if (i < numLarge) {
+        shapes.push(createShape(j.concat(i), shapeSizeLg));
+    } else if (i < (numMed + numLarge)) {
+        shapes.push(createShape(j.concat(i), shapeSizeMd));
+    } else {
+        shapes.push(createShape(j.concat(i), shapeSizeSm));
+    }
+    
 }
 
-let shape3 = {
-    elem: document.getElementById("shape3"),
-    yPos: getRndInteger(1, screenHeight - shapeSizeLg - 1),
-    xPos: getRndInteger(1, screenWidth - shapeSizeLg - 1),
-    yDir: Math.round(Math.random()) * 2 - 1,
-    xDir: Math.round(Math.random()) * 2 - 1,
-    size: shapeSizeLg
+for (let i=0; i < numOfShapes; i++) {
+    ids[i] = null;
+    clearInterval(ids[i]);
+    ids[i] = setInterval(frame, 10, shapes[i]);
 }
 
-let shape4 = {
-    elem: document.getElementById("shape4"),
-    yPos: getRndInteger(1, screenHeight - shapeSizeLg - 1),
-    xPos: getRndInteger(1, screenWidth - shapeSizeLg - 1),
-    yDir: Math.round(Math.random()) * 2 - 1,
-    xDir: Math.round(Math.random()) * 2 - 1,
-    size: shapeSizeLg
+function createShape(shapeNum, shapeSize) {
+    return {
+        elem: document.getElementById(shapeNum),
+        yPos: getRndInteger(1, screenHeight - shapeSize - 1),
+        xPos: getRndInteger(1, screenWidth - shapeSize - 1),
+        yDir: Math.round(Math.random()) * 2 - 1,
+        xDir: Math.round(Math.random()) * 2 - 1,
+        size: shapeSize
+    }
 }
-
-let shape5 = {
-    elem: document.getElementById("shape5"),
-    yPos: getRndInteger(1, screenHeight - shapeSizeMd - 1),
-    xPos: getRndInteger(1, screenWidth - shapeSizeMd - 1),
-    yDir: Math.round(Math.random()) * 2 - 1,
-    xDir: Math.round(Math.random()) * 2 - 1,
-    size: shapeSizeMd
-}
-
-let shape6 = {
-    elem: document.getElementById("shape6"),
-    yPos: getRndInteger(1, screenHeight - shapeSizeMd - 1),
-    xPos: getRndInteger(1, screenWidth - shapeSizeMd - 1),
-    yDir: Math.round(Math.random()) * 2 - 1,
-    xDir: Math.round(Math.random()) * 2 - 1,
-    size: shapeSizeMd
-}
-
-let shape7 = {
-    elem: document.getElementById("shape7"),
-    yPos: getRndInteger(1, screenHeight - shapeSizeMd - 1),
-    xPos: getRndInteger(1, screenWidth - shapeSizeMd - 1),
-    yDir: Math.round(Math.random()) * 2 - 1,
-    xDir: Math.round(Math.random()) * 2 - 1,
-    size: shapeSizeMd
-}
-
-let shape8 = {
-    elem: document.getElementById("shape8"),
-    yPos: getRndInteger(1, screenHeight - shapeSizeMd - 1),
-    xPos: getRndInteger(1, screenWidth - shapeSizeMd - 1),
-    yDir: Math.round(Math.random()) * 2 - 1,
-    xDir: Math.round(Math.random()) * 2 - 1,
-    size: shapeSizeMd
-}
-
-let shape9 = {
-    elem: document.getElementById("shape9"),
-    yPos: getRndInteger(1, screenHeight - shapeSizeSm - 1),
-    xPos: getRndInteger(1, screenWidth - shapeSizeSm - 1),
-    yDir: Math.round(Math.random()) * 2 - 1,
-    xDir: Math.round(Math.random()) * 2 - 1,
-    size: shapeSizeSm
-}
-
-let shape10 = {
-    elem: document.getElementById("shape10"),
-    yPos: getRndInteger(1, screenHeight - shapeSizeSm - 1),
-    xPos: getRndInteger(1, screenWidth - shapeSizeSm - 1),
-    yDir: Math.round(Math.random()) * 2 - 1,
-    xDir: Math.round(Math.random()) * 2 - 1,
-    size: shapeSizeSm
-}
-
-let shape11 = {
-    elem: document.getElementById("shape11"),
-    yPos: getRndInteger(1, screenHeight - shapeSizeSm - 1),
-    xPos: getRndInteger(1, screenWidth - shapeSizeSm - 1),
-    yDir: Math.round(Math.random()) * 2 - 1,
-    xDir: Math.round(Math.random()) * 2 - 1,
-    size: shapeSizeSm
-}
-
-let shape12 = {
-    elem: document.getElementById("shape12"),
-    yPos: getRndInteger(1, screenHeight - shapeSizeSm - 1),
-    xPos: getRndInteger(1, screenWidth - shapeSizeSm - 1),
-    yDir: Math.round(Math.random()) * 2 - 1,
-    xDir: Math.round(Math.random()) * 2 - 1,
-    size: shapeSizeSm
-}
-
-id1 = setInterval(frame, 10, shape1);
-id2 = setInterval(frame, 10, shape2);
-id3 = setInterval(frame, 10, shape3);
-id4 = setInterval(frame, 10, shape4);
-id5 = setInterval(frame, 10, shape5);
-id6 = setInterval(frame, 10, shape6);
-id7 = setInterval(frame, 10, shape7);
-id8 = setInterval(frame, 10, shape8);
-id9 = setInterval(frame, 10, shape9);
-id10 = setInterval(frame, 10, shape10);
-id11 = setInterval(frame, 10, shape11);
-id12 = setInterval(frame, 10, shape12);
 
 function frame(shape) {
     if (((shape.yPos + shape.size) >= screenHeight) || (shape.yPos <= 0)) {
