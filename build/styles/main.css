@@ -271,7 +271,7 @@ p:not(:last-of-type) {
 .image--one-third-width {
   align-self: center;
   height: auto;
-  max-width: 370px;
+  max-width: 260px;
   width: auto;
 }
 @media only screen and (min-width: 1024px) {
@@ -421,8 +421,6 @@ p:not(:last-of-type) {
 .pagescreen {
   display: block;
   min-height: calc(100vh - 60px);
-  margin: auto;
-  max-width: 1600px;
   padding: 50px 30px 25px;
   width: 100%;
 }
@@ -438,8 +436,11 @@ p:not(:last-of-type) {
 }
 @media only screen and (min-width: 1201px) {
   .pagescreen {
-    padding: 100px 150px 50px;
+    padding: 100px calc((100vw - 1300px) * 0.5) 50px;
   }
+}
+.pagescreen__first {
+  background: linear-gradient(#080808, #282828);
 }
 .pagescreen--flex {
   align-items: center;
