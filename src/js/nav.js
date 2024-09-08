@@ -21,21 +21,21 @@ window.onscroll = function() {
     var navCont = document.getElementById("navCont");
 
     if (window.scrollY >= aboutSectionPos && window.scrollY < projectsSectionPos) {
-        navAbt.classList.add("nav__item-link--active");
-        navProj.classList.remove("nav__item-link--active");
-        navCont.classList.remove("nav__item-link--active");
+        navAbt.classList.add("nav__item--active");
+        navProj.classList.remove("nav__item--active");
+        navCont.classList.remove("nav__item--active");
     } 
     
     if (window.scrollY >= projectsSectionPos && window.scrollY < contactSectionPos) {
-        navAbt.classList.remove("nav__item-link--active");
-        navProj.classList.add("nav__item-link--active");
-        navCont.classList.remove("nav__item-link--active");
+        navAbt.classList.remove("nav__item--active");
+        navProj.classList.add("nav__item--active");
+        navCont.classList.remove("nav__item--active");
     }
     
     if (window.scrollY >= contactSectionPos) {
-        navAbt.classList.remove("nav__item-link--active");
-        navProj.classList.remove("nav__item-link--active");
-        navCont.classList.add("nav__item-link--active");
+        navAbt.classList.remove("nav__item--active");
+        navProj.classList.remove("nav__item--active");
+        navCont.classList.add("nav__item--active");
     }
 };
 

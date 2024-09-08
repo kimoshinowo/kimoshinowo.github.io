@@ -42,6 +42,14 @@
         &:active {
             background-color: $dark-main-colour;
         }
+
+        &--active {
+            background-color: $dark-main-colour--extra-dark;
+
+            & > * {
+                background-color: $dark-main-colour--extra-dark;
+            }
+        }
     }
 
     &__item-link {
@@ -60,10 +68,6 @@
         &:focus,
         &:active {
             background-color: $dark-main-colour;
-        }
-
-        &--active {
-            background-color: $dark-main-colour--extra-dark;
         }
     }
 
