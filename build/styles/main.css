@@ -154,6 +154,7 @@ p:not(:last-of-type) {
   align-items: center;
   display: flex;
   height: 100%;
+  justify-content: space-between;
   margin: auto;
   max-width: 1600px;
   width: 100%;
