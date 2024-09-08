@@ -17,6 +17,7 @@
         width: 100%;
     
         @media only screen and (min-width: 600px) {
+            justify-content: unset;
             padding: 0 100px;
         }
     

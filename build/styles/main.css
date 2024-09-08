@@ -161,6 +161,7 @@ p:not(:last-of-type) {
 }
 @media only screen and (min-width: 600px) {
   .nav__list {
+    justify-content: unset;
     padding: 0 100px;
   }
 }
