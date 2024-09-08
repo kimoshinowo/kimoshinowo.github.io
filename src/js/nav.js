@@ -2,22 +2,44 @@
 var navbar = document.getElementById("nav");
 var sticky = navbar.previousElementSibling.offsetHeight - 60;
 
+var aboutSection = document.getElementById("about");
+var projectsSection = document.getElementById("projects");
+var contactSection = document.getElementById("contact");
+var aboutSectionPos = aboutSection.offsetTop - 60;
+var projectsSectionPos = projectsSection.offsetTop - 60;
+var contactSectionPos = contactSection.offsetTop - 60;
+
 window.onscroll = function() {
     if (window.scrollY >= sticky) {
         navbar.classList.add("nav--stick")
     } else {
         navbar.classList.remove("nav--stick");
     }
+    
+    var navAbt = document.getElementById("navAbt");
+    var navProj = document.getElementById("navProj");
+    var navCont = document.getElementById("navCont");
+
+    if (window.scrollY >= aboutSectionPos && window.scrollY < projectsSectionPos) {
+        navAbt.classList.add("nav__item-link--active");
+        navProj.classList.remove("nav__item-link--active");
+        navCont.classList.remove("nav__item-link--active");
+    } 
+    
+    if (window.scrollY >= projectsSectionPos && window.scrollY < contactSectionPos) {
+        navAbt.classList.remove("nav__item-link--active");
+        navProj.classList.add("nav__item-link--active");
+        navCont.classList.remove("nav__item-link--active");
+    }
+    
+    if (window.scrollY >= contactSectionPos) {
+        navAbt.classList.remove("nav__item-link--active");
+        navProj.classList.remove("nav__item-link--active");
+        navCont.classList.add("nav__item-link--active");
+    }
 };
 
 function smoothScrollWithOffset(target) {
-    var aboutSection = document.getElementById("about");
-    var projectsSection = document.getElementById("projects");
-    var contactSection = document.getElementById("contact");
-    var aboutSectionPos = aboutSection.offsetTop;
-    var projectsSectionPos = projectsSection.offsetTop;
-    var contactSectionPos = contactSection.offsetTop;
-
     if (target == 'about') {
         var pos = aboutSectionPos;
     } else if (target == 'projects') {
@@ -26,7 +48,5 @@ function smoothScrollWithOffset(target) {
         var pos = contactSectionPos;
     }
 
-    var scrollPos = pos - 60;
-
-    window.scrollTo({top: scrollPos, behavior: "smooth"});
+    window.scrollTo({top: pos, behavior: "smooth"});
 }

@@ -57,18 +57,13 @@
         }
 
         &:hover,
-        &:focus {
+        &:focus,
+        &:active {
             background-color: $dark-main-colour;
         }
 
-        &:active {
-            background-color: $dark-main-colour;
-            color: $dark-text-colour--dark;
-        }
-
-        &:active {
-            background-color: $dark-main-colour;
-            color: $dark-text-colour--dark;
+        &--active {
+            background-color: $dark-main-colour--extra-dark;
         }
     }
 
