@@ -115,7 +115,12 @@ p:not(:last-of-type) {
   font-size: 1.2rem;
   font-weight: bold;
   margin: 4px auto;
-  padding: 20px 50px;
+  padding: 20px 15px;
+}
+@media only screen and (min-width: 600px) {
+  .button {
+    padding: 20px 50px;
+  }
 }
 .button:hover, .button:focus {
   background-color: #1d7365;
@@ -439,7 +444,7 @@ p:not(:last-of-type) {
     padding: 100px calc((100vw - 1300px) * 0.5) 50px;
   }
 }
-.pagescreen__first {
+.pagescreen--gradient {
   background: linear-gradient(#080808, #282828);
 }
 .pagescreen--flex {
