@@ -1,8 +1,6 @@
 .pagescreen {
     display: block;
     min-height: calc(100vh - 60px);
-    margin: auto;
-    max-width: 1600px;
     padding: 50px 30px 25px;
     width: 100%;
 
@@ -15,6 +13,9 @@
     }
 
     @media only screen and (min-width: 1201px) {
+        padding: 100px calc((100vw - 1300px) * 0.5) 50px;
+    }
+
     &--gradient {
         background: linear-gradient($dark-bg-colour--darker, $dark-bg-colour);
     }
